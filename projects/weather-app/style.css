@@ -133,7 +133,7 @@ img{
     padding: 0;
 }
 
-@media screen and (max-width: 600px) {
+@media(max-width: 900px) {
     .container{
         width: 100%;
         justify-content: center;
@@ -184,4 +184,5 @@ img{
         align-items: center;
         padding-right: 10px;
     }
+
 }
