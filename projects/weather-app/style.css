@@ -1,0 +1,144 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background: #0d213f;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    height: 100vh;
+}
+
+.input-box{
+    width: 95%;
+}
+
+.output-box{
+        width: 90%;
+}
+
+input{
+    width: 80%;
+    padding-left: 10px;
+    font-size: 1.2rem;
+    border: none;
+    height: 30px;
+    border-radius: 18px;
+}
+
+button{
+    width: 17%;
+    border: none;
+    border-radius: 18px;
+    height: 30px;
+    font-weight: 600;
+    font-size: 100%;
+    color: white;
+    background: #1e90ff;
+}
+
+button:hover{
+    background: #0b61c1;
+    cursor: pointer;
+}
+
+input:focus{
+    outline: none;
+    border: 2px solid #1e90ff;
+}
+
+.output-box{
+    width: 95%;
+    margin-top: 20px;
+    background: #112d4e;
+    padding: 20px;
+    border-radius: 18px;
+    min-height: 200px;
+    text-align: end;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+fieldset{
+    border: 2px solid #1e90ff;
+    border-radius: 18px;
+    padding: 10px;
+    width: 45%;
+
+}
+
+legend{
+    padding: 0 10px;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+#temp,#weather{
+    display: flex;
+    flex-direction: column;
+}
+
+span{
+    font-size: 30px;
+    font-weight: 600;
+    align-self: start;
+    height: 100px;
+    display: inline-block;
+}
+
+img{
+    max-width: 100px;
+}
+
+p{
+    align-self: flex-end;
+    justify-self: flex-end;
+}
+
+@media (max-width: 650px){
+    .output-box{
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 2%;
+        margin-top: 20%;
+    }
+
+    fieldset{
+        width: 80%;
+        margin-bottom: 20px;
+    }
+        
+    span{
+        height: auto;
+        font-size: 30px;
+    }
+    
+    #temp,#weather{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    img{
+        max-width: 70px;
+    }
+
+    p{
+        align-self: center;
+        justify-self: center;
+        font-size: large;
+        font-weight: bold;
+    }
+}
