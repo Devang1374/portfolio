@@ -62,6 +62,8 @@ input:focus{
     padding: 10px;   
     padding-top: 50px;
     color: white;
+    position:relative;
+    z-index:2;
 }
 
 .movie-card::before{
@@ -113,4 +115,5 @@ input:focus{
     #input-box div{
         width: 100%;
     }
+
 }
