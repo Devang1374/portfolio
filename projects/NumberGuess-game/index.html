@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="input-card">
+        <h1>Guess the Number</h1>
+        <p>Guess a number between 1 and 100</p>
+        <input type="number" id="guessInput" class="guessInput" placeholder="Enter number..." />
+        <button onclick="checkGuess()" id="check">Check</button>    
+        <button onclick="resetGame()" id="resetButton">Reset Game</button>
+
+        <p id="message"></p>
+        <p id="attempts"></p>
+        <p id="bestScore"></p>
+    </div>
+
+    <audio src="sounds/win.wav" id="winSound"></audio>
+    <audio src="sounds/wrong.wav" id="wrongSound"></audio>
+    <audio src="sounds/click.wav" id="clickSound"></audio>
+    <audio src="sounds/lose.wav" id="loseSound"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
