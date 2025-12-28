@@ -156,8 +156,12 @@ function saveEdit(input){
         }
     });
 
+    li.onclick = () => {
+        li.classList.toggle("remove");
+    }
 
     input.replaceWith(p);
 
     saveTask();
+
 }
